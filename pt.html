@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Progress Tracker | Jordan Ellis Upgrade Training Hub</title>
+  <meta name="description" content="Track your upgrade training progress quickly and easily." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="disclaimer">
+    This tracker is for personal reference only. It does not replace official tracking in MyLearning/MyETMS.
+  </div>
+
+  <header>
+    <nav>
+      <div class="logo">SSgt Jordan Ellis</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="resources.html">Study Resources</a></li>
+        <li><a href="tracker.html">Progress Tracker</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Progress Tracker</h1>
+    <p class="tagline">
+      Check off tasks as you complete them. Your progress is saved automatically in your browser —
+      no account, no login, no waiting on a slow system to update.
+    </p>
+  </section>
+
+  <section class="about-section">
+
+    <h2>3-Level Checklist</h2>
+    <div class="checklist" id="checklist-3level"></div>
+
+    <h2 style="margin-top: 2rem;">5-Level Checklist</h2>
+    <div class="checklist" id="checklist-5level"></div>
+
+    <h2 style="margin-top: 2rem;">7-Level Checklist</h2>
+    <div class="checklist" id="checklist-7level"></div>
+
+    <!-- Progress summary bar -->
+    <div style="margin-top: 2.5rem;">
+      <h3>Overall Progress: <span id="progressPercent">0%</span></h3>
+      <div class="progress-bar-outer">
+        <div class="progress-bar-inner" id="progressBarInner"></div>
+      </div>
+    </div>
+
+    <button class="btn" style="margin-top: 1.5rem;" onclick="resetProgress()">Reset All Progress</button>
+
+  </section>
+
+  <footer>
+    &copy; 2026 Jordan Ellis Training Hub. Built by an Airman, for Airmen.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

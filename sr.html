@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Resources | Jordan Ellis Upgrade Training Hub</title>
+  <meta name="description" content="Organized study resources for 3, 5, and 7-level upgrade training." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="disclaimer">
+    This is an unofficial, personal resource and is not affiliated with or endorsed by the U.S. Air Force.
+    Content here is a supplement to, not a replacement for, official CDC materials.
+  </div>
+
+  <header>
+    <nav>
+      <div class="logo">SSgt Jordan Ellis</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="resources.html">Study Resources</a></li>
+        <li><a href="tracker.html">Progress Tracker</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Study Resources</h1>
+    <p class="tagline">Organized by skill level. Click a section to expand — no more digging through folders.</p>
+
+    <!-- Search bar reused here so users can search directly from this page too -->
+    <div class="search-bar">
+      <input type="text" id="resourceSearchInput" placeholder="Search resources..." onkeyup="filterResources()" />
+      <button onclick="filterResources()">Search</button>
+    </div>
+  </section>
+
+  <section class="about-section">
+
+    <!-- 3-LEVEL ACCORDION SECTION -->
+    <div class="accordion-item" id="3level">
+      <button class="accordion-header" onclick="toggleAccordion('acc1')">
+        3-Level Materials <span class="accordion-icon" id="icon-acc1">+</span>
+      </button>
+      <div class="accordion-content" id="acc1">
+        <div class="resource-list">
+          <div class="resource-entry" data-keywords="basic fundamentals safety orientation">
+            <h4>Foundations & Safety Overview</h4>
+            <p>Quick-reference summary covering core safety procedures and basic terminology every new Airman needs on day one.</p>
+            <a href="#" class="btn">Open Guide</a>
+          </div>
+          <div class="resource-entry" data-keywords="ojt checklist tasks">
+            <h4>OJT Task Checklist Template</h4>
+            <p>Printable checklist to track your on-the-job training tasks as you complete them.</p>
+            <a href="#" class="btn">Download PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5-LEVEL ACCORDION SECTION -->
+    <div class="accordion-item" id="5level">
+      <button class="accordion-header" onclick="toggleAccordion('acc2')">
+        5-Level Materials <span class="accordion-icon" id="icon-acc2">+</span>
+      </button>
+      <div class="accordion-content" id="acc2">
+        <div class="resource-list">
+          <div class="resource-entry" data-keywords="cdc 1 volume 1 core knowledge">
+            <h4>CDC Volume 1 Summary Notes</h4>
+            <p>My personal condensed notes covering the key concepts from CDC Volume 1 — the stuff that's actually tested.</p>
+            <a href="#" class="btn">Open Guide</a>
+          </div>
+          <div class="resource-entry" data-keywords="cdc 3 volume 3 practice test quiz">
+            <h4>CDC Volume 3 Practice Quiz</h4>
+            <p>20-question practice quiz based on common CDC 3 topics. Great for self-checking before your EOC.</p>
+            <a href="#" class="btn">Start Quiz</a>
+          </div>
+          <div class="resource-entry" data-keywords="task walkthrough qualification">
+            <h4>Task Qualification Walkthroughs</h4>
+            <p>Step-by-step breakdowns of commonly tricky tasks, written the way I wish someone had explained them to me.</p>
+            <a href="#" class="btn">Open Guide</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7-LEVEL ACCORDION SECTION -->
+    <div class="accordion-item" id="7level">
+      <button class="accordion-header" onclick="toggleAccordion('acc3')">
+        7-Level Materials <span class="accordion-icon" id="icon-acc3">+</span>
+      </button>
+      <div class="accordion-content" id="acc3">
+        <div class="resource-list">
+          <div class="resource-entry" data-keywords="leadership advanced supervisory">
+            <h4>Leadership & Supervisory Prep</h4>
+            <p>Resources to help prepare for the leadership-focused aspects of 7-level responsibilities.</p>
+            <a href="#" class="btn">Open Guide</a>
+          </div>
+          <div class="resource-entry" data-keywords="advanced task reference">
+            <h4>Advanced Task Reference Sheet</h4>
+            <p>Quick-reference sheet for complex, less-frequently performed tasks at the 7-level.</p>
+            <a href="#" class="btn">Open Guide</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p id="noResultsMsg" style="display:none; margin-top: 1.5rem; color: #888;">
+      No resources matched your search. Try a different keyword.
+    </p>
+
+  </section>
+
+  <footer>
+    &copy; 2026 Jordan Ellis Training Hub. Built by an Airman, for Airmen.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

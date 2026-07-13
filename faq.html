@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ | Jordan Ellis Upgrade Training Hub</title>
+  <meta name="description" content="Frequently asked questions about upgrade training." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="disclaimer">
+    This is an unofficial, personal resource and is not affiliated with or endorsed by the U.S. Air Force.
+  </div>
+
+  <header>
+    <nav>
+      <div class="logo">SSgt Jordan Ellis</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="resources.html">Study Resources</a></li>
+        <li><a href="tracker.html">Progress Tracker</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Frequently Asked Questions</h1>
+    <p class="tagline">The questions I get asked most often — answered once, here, for everyone.</p>
+  </section>
+
+  <section class="about-section">
+
+    <div class="accordion-item">
+      <button class="accordion-header" onclick="toggleAccordion('faq1')">
+        How is this different from MyLearning? <span class="accordion-icon" id="icon-faq1">+</span>
+      </button>
+      <div class="accordion-content" id="faq1">
+        <p>MyLearning is the official system of record — you still need to complete requirements there.
+        This site is a faster, more organized personal resource to help you actually study and track your
+        own progress along the way. Think of it as a study companion, not a replacement.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header" onclick="toggleAccordion('faq2')">
+        Is my progress on the tracker saved anywhere official? <span class="accordion-icon" id="icon-faq2">+</span>
+      </button>
+      <div class="accordion-content" id="faq2">
+        <p>No. The tracker on this site saves progress locally in your browser for your own personal reference.
+        You still must complete and record everything officially through MyLearning/MyETMS and with your trainer.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header" onclick="toggleAccordion('faq3')">
+        Can I contribute study materials? <span class="accordion-icon" id="icon-faq3">+</span>
+      </button>
+      <div class="accordion-content" id="faq3">
+        <p>Yes! If you've written your own summaries, guides, or practice questions and want to share them,
+        reach out to me directly. Just make sure nothing you submit contains classified, CUI, or copyrighted CDC content.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header" onclick="toggleAccordion('faq4')">
+        What if I still have a question that's not answered here? <span class="accordion-icon" id="icon-faq4">+</span>
+      </button>
+      <div class="accordion-content" id="faq4">
+        <p>Reach out through the contact info below, or ask in your shop's group chat — I try to check both regularly.</p>
+      </div>
+    </div>
+
+    <div style="margin-top: 2.5rem;">
+      <h2>Still Have a Question?</h2>
+      <p style="margin-top: 0.8rem;">Message me directly and I'll get back to you as soon as I can.</p>
+      <a href="mailto:jordan.ellis.training@example.com" class="btn" style="margin-top: 1rem; display:inline-block;">
+        Email Me
+      </a>
+    </div>
+
+  </section>
+
+  <footer>
+    &copy; 2026 Jordan Ellis Training Hub. Built by an Airman, for Airmen.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

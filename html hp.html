@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic meta tags for fast, mobile-friendly rendering -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jordan Ellis | Upgrade Training Hub</title>
+  <meta name="description" content="Fast, no-nonsense upgrade training resources built by an Airman, for Airmen." />
+
+  <!-- Single lightweight stylesheet - keeps load time minimal -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Disclaimer banner required for OPSEC/legal clarity -->
+  <div class="disclaimer">
+    This is an unofficial, personal resource and is not affiliated with or endorsed by the U.S. Air Force.
+    Always refer to MyLearning/MyETMS for official certification and compliance tracking.
+  </div>
+
+  <!-- Sticky navigation bar for quick access across pages -->
+  <header>
+    <nav>
+      <div class="logo">SSgt Jordan Ellis</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="resources.html">Study Resources</a></li>
+        <li><a href="tracker.html">Progress Tracker</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero section: personal branding front and center -->
+  <section class="hero">
+    <!-- Replace with actual photo path once uploaded -->
+    <img src="profile-photo.jpg" alt="SSgt Jordan Ellis" class="profile-photo" />
+    <h1>Upgrade Training Shouldn't Take Longer Than the Job Itself.</h1>
+    <p class="tagline">
+      I'm SSgt Jordan Ellis — a 7-level trainer who got tired of watching Airmen struggle
+      through scattered study guides and slow systems. So I built this. Fast, simple, and made for you.
+    </p>
+
+    <!-- Search bar - core convenience feature -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search '5-level CDC 3' or 'task qualification'..." />
+      <button onclick="performSearch()">Search</button>
+    </div>
+
+    <!-- Quick access buttons to reduce clicks to key content -->
+    <div class="quick-links">
+      <a href="resources.html" class="btn">Start Studying</a>
+      <a href="tracker.html" class="btn">Track My Progress</a>
+      <a href="faq.html" class="btn">Ask a Question</a>
+    </div>
+  </section>
+
+  <!-- Resource category cards -->
+  <section class="card-grid">
+    <div class="card">
+      <h3>3-Level Materials</h3>
+      <p>Foundational study guides and OJT checklists to get you started right.</p>
+      <a href="resources.html#3level">View Resources →</a>
+    </div>
+    <div class="card">
+      <h3>5-Level Materials</h3>
+      <p>CDC summaries, task walkthroughs, and practice quizzes.</p>
+      <a href="resources.html#5level">View Resources →</a>
+    </div>
+    <div class="card">
+      <h3>7-Level Materials</h3>
+      <p>Advanced task references and leadership-track prep.</p>
+      <a href="resources.html#7level">View Resources →</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 Jordan Ellis Training Hub. Built by an Airman, for Airmen.
+  </footer>
+
+  <!-- Lightweight JS for search functionality -->
+  <script src="script.js"></script>
+</body>
+</html>

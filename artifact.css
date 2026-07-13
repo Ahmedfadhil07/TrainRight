@@ -1,0 +1,92 @@
+/* ===== ACCORDION STYLES (used on resources.html and faq.html) ===== */
+.accordion-item {
+  margin-bottom: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  width: 100%;
+  text-align: left;
+  background-color: var(--card-bg);
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.15s ease;
+}
+
+.accordion-header:hover {
+  background-color: #eef4fb;
+}
+
+.accordion-icon {
+  color: var(--accent-color);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.accordion-content {
+  display: none;
+  padding: 1rem 1.5rem;
+  background-color: #fafbfc;
+}
+
+/* ===== RESOURCE ENTRY CARDS (inside accordion content) ===== */
+.resource-entry {
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.resource-entry:last-child {
+  border-bottom: none;
+}
+
+.resource-entry h4 {
+  color: var(--primary-color);
+  margin-bottom: 0.4rem;
+}
+
+/* ===== CHECKLIST STYLES (used on tracker.html) ===== */
+.checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.checklist-item input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent-color);
+  cursor: pointer;
+}
+
+.checklist-item label {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* ===== PROGRESS BAR (used on tracker.html) ===== */
+.progress-bar-outer {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  height: 20px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.progress-bar-inner {
+  height: 100%;
+  width: 0%;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
+}
